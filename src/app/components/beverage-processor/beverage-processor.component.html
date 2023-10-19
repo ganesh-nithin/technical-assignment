@@ -1,0 +1,64 @@
+<div class="main-container">
+  <div class="low-level-indicators">
+    <div class="level-indicator">
+      <p>Low Water</p>
+      <div class="indicator-box"></div>
+    </div>
+    <div class="level-indicator">
+      <p>Low Water</p>
+      <div class="indicator-box"></div>
+    </div>
+    <div class="level-indicator">
+      <p>Low Water</p>
+      <div class="indicator-box"></div>
+    </div>
+  </div>
+  <div class="beverage-process-indicators">
+    <div class="ingredients-container" *ngFor="let i of [1, 2]">
+      <p>Level Indicator</p>
+      <div class="ingredients">
+        <input type="range" id="temp" name="temp" list="markers" value="100" />
+        <datalist id="markers">
+          <option value="0"></option>
+          <option value="25" label="25"></option>
+          <option value="50"></option>
+          <option value="75"></option>
+          <option value="100" label="100"></option>
+        </datalist>
+      </div>
+    </div>
+    <div class="process-indicators">
+      <div class="process-indicator">
+        <div class="indicator-box"></div>
+        <p>Low Water</p>
+      </div>
+      <div class="process-indicator">
+        <div class="indicator-box"></div>
+        <p>Low Water</p>
+      </div>
+      <div class="process-indicator">
+        <div class="indicator-box"></div>
+        <p>Low Water</p>
+      </div>
+      <div class="process-indicator">
+        <div class="indicator-box"></div>
+        <p>Low Water</p>
+      </div>
+      <div class="process-indicator">
+        <div class="indicator-box"></div>
+        <p>Low Water</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="level-indicator">
+      <p>Low Water</p>
+      <div class="indicator-box"></div>
+    </div>
+    <div class="level-indicator">
+      <p>Low Water</p>
+      <div class="indicator-box"></div>
+    </div>
+  </div>
+</div>

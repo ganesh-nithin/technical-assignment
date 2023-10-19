@@ -1,0 +1,22 @@
+.container {
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  height: 45vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: greenyellow;
+}
+
+datalist {
+  display: flex;
+
+  justify-content: space-between;
+
+  width: 200px;
+}
+
+input[type="range"] {
+  width: 200px;
+  margin: 0;
+}

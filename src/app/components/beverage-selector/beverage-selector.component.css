@@ -1,0 +1,46 @@
+.beverage-container {
+  margin: 20px;
+  display: flex;
+  height: 30vh;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: greenyellow;
+}
+
+.quantity-selector {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  row-gap: 10px;
+}
+
+.quantity-button {
+  padding: 4px 10px;
+  background-color: brown;
+  color: white;
+  border: none;
+}
+
+.beverage-selector {
+  display: flex;
+  background-color: brown;
+  color: white;
+  padding: 5px 15px;
+}
+
+.button {
+  height: 52px;
+  width: fit-content;
+}
+
+.button-odd {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: start;
+}
+.button-even {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}

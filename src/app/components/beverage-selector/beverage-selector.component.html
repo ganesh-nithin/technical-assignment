@@ -1,0 +1,29 @@
+<div class="beverage-container">
+  <div class="quantity-selector">
+    <button class="quantity-button" *ngFor="let quantity of quantities">
+      {{ quantity.visibleTest }}
+    </button>
+  </div>
+
+  <form action="">
+    <div class="beverage-selector">
+      <div
+        *ngFor="let beverage of beverages; index as i"
+        [ngClass]="{
+          'button button-odd': i % 2 == 0,
+          'button button-even': i % 2 != 0
+        }"
+      >
+        <input
+          type="radio"
+          [id]="beverage.value"
+          name="beverages"
+          [value]="beverage.value"
+          [checked]="i == 0"
+          (change)="changeSelectedBeverage(beverage.value)"
+        />
+        <label [for]="beverage.value">{{ beverage.visibleTest }}</label>
+      </div>
+    </div>
+  </form>
+</div>
